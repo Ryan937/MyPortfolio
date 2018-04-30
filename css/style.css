@@ -31,7 +31,7 @@
 }
 
 body {
-    font-family: 'Titilium Web', Calibri, sans-serif;
+    font-family: CabinSketch;
 }
 
 .primary-menu {
@@ -76,13 +76,48 @@ nav ul li a.active {
 
 /*until here is the template for every page*/
 
-.image-cropper {
+#image-cropper {
     width: 400px;
     height: 400px;
     overflow: hidden;
-    margin-left: 10%;
+    margin-top: 10%;
+    margin-left: 30%; 
     border-radius: 50%;
     border: 3px solid #d3d3d3;
+}
+
+#intro {
+    margin-top: 15%;
+    margin-left: 1%;
+    font-family: CabinSketch;
+    animation: typing-animation 2s steps(32), blink 0.5s infinite alternate;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 540px;
+    border-right: 3px solid #000;
+}
+
+@keyframes typing-animation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 540px;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: #000;
+    }
+}
+
+@font-face {
+    font-family: CabinSketch;
+    src: url('CabinSketch-Regular.ttf');
 }
 
 #mypicture {
