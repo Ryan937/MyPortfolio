@@ -1,0 +1,113 @@
+#logo {
+    background: url("../pictures/logo3.png") no-repeat;
+    width: 200px;
+    height: 75px;
+    display: inline-block;
+    background-size: contain;
+}
+
+#logodiv {
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+}
+
+#logodiv:hover {
+    animation-name: bounce;
+    animation-duration: 1.1s;
+}
+
+@keyframes bounce {
+    0% {top:0px;}
+    25% {top:-10px;}
+    50% {top:0px;}
+    75% {top:-10px;}
+    100% {top:0px;}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: CabinSketch;
+}
+
+.primary-menu {
+    width: 100%;
+    padding: 1% 0;
+}
+
+#menu-main {
+    width: 900px;
+    margin: 0 auto; 
+    background-color: rgba(230, 230, 230, 0.5);
+    text-align: center;
+    border-radius: 63px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 30px 60px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #323642;
+    transition: background-color 0.5s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    text-decoration-color: aqua;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: CabinSketch;
+    src: url('fonts/CabinSketch-Regular.ttf');
+}
+
+.line {
+    border-top: solid 1.8px #d3d3d3;
+    width: 90%;
+    margin: 3% auto 1%;
+}
+
+.reserved {
+    text-align: right;
+    padding-bottom: 1%;
+    padding-right: 3%;
+}
+
+/*until here is the template for every page*/
+
+#header {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.intro {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.topline {
+    border-top: solid 3.5px #d3d3d3;
+    width: 70%;
+    margin: 3% auto 1%;
+}

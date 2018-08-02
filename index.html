@@ -7,7 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/myfunction.js"></script>
+
     <title>Ryan Cha</title>
   </head>
   <body>
@@ -15,33 +19,73 @@
           <a href="index.html" id="logo"></a>
       </div>
 
-      <nav class="primary-menu">
-        <ul id="menu-main">
-          <li id="menu-home">
-            <a href="index.html">Home</a>
-          </li>
-          <li id="menu-work">
-            <a href="mywork.html">My Work</a>
-          </li>
-          <li id="menu-about">
-            <a href="aboutme.html">About Me</a>
-          </li>
-          <li id="menu-contact">
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <div id="windownav">
+        <nav class="primary-menu">
+          <ul id="menu-main">
+            <li id="menu-home">
+              <a href="index.html">Home</a>
+            </li>
+            <li id="menu-work">
+              <a href="mywork.html">My Work</a>
+            </li>
+            <li id="menu-about">
+              <a href="aboutme.html">About Me</a>
+            </li>
+            <li id="menu-contact">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!--Navbar-->
+      <div id="mobilenav">
+        <nav class="navbar navbar-light navbar-9 white">
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15"
+                aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mywork.html">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- Links -->
+
+            </div>
+            <!-- Collapsible content -->
+
+        </nav>  
+      </div>
+
       <div class="row">
-          <div class="col-xl-5">
+          <div class="col-xl-5 col-lg-5 col-md-12">
             <div id="image-cropper">
               <img src="pictures/me2.jpeg" alt="My Picture" id="mypicture">
             </div> 
           </div>
-          <div class="col-xl-7">
+          <div class="col-xl-7 col-lg-7 col-md-12">
             <h1 id="intro">Hello, this is me and I am here.</h1>
           </div>
       </div>
-      
+      <footer>
+        <div class="line"></div>
+        <p class="reserved">© 2018 Ryan Hyunjun Cha. All rights reserved.</p>
+      </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
